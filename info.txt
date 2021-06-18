@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: LibreBaskerville-Bold
+font link: https://fonts.google.com/specimen/Libre+Baskerville
+font author: Impallari Type
+font author site: https://twitter.com/pabloimpallari
+
+
+icon designer: Alfredo @ IconsAlfredo.com
+icon designer link: /AlfredoCreates
+        
+{"bg":"#132554","icon":"#00A3DD","font":"#ffffff","slogan":"#ffffff"}
+      
