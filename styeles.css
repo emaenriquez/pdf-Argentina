@@ -13,7 +13,6 @@ body {
 .contenedor {
     display: flex;
     flex-direction: column;
-
 }
 
 .contenedor__header {
@@ -54,11 +53,12 @@ img {
     margin-right: 20px;
 }
 
+
+
 .seccion__img {
     display: flex;
     flex-direction: row;
     background: var(--color-relleno);
-    /* margin-left: 50px; */
 }
 
 .seccion__img img {
@@ -76,11 +76,29 @@ img {
     margin: 8%;
 }
 
-.card__seccion-1 {
-    display: flex;
-    flex-direction: column;
-
+.card__seccion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+
+.elemento__card-1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.elemento__card-2 {
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+.elemento__card-3 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.elemento__card-4 {
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+
 
 .card__img {
     width: 32px;
@@ -99,11 +117,9 @@ p {
 
 .documentos__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-
-
 
 .documentos__card {
     display: flex;
@@ -157,40 +173,25 @@ h3 {
         text-align: center;
     }
 
+    .card__seccion {
+        display: flex;
+        flex-direction: column;
+    }
+
     .documentos__grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
 }
 
-@media screen and (min-width: 900px) {
-    .card__seccion {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .elemento__card-1 {
-        grid-area: 1 / 1 / 2 / 3;
-    }
-
-    .elemento__card-2 {
-        grid-area: 1 / 3 / 2 / 5;
-    }
-
-    .elemento__card-3 {
-        grid-area: 2 / 1 / 3 / 3;
-    }
-
-    .elemento__card-4 {
-        grid-area: 2 / 3 / 3 / 5;
-    }
+@media screen and (max-width: 900px) {
 
     .documentos__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+
 }
