@@ -145,6 +145,49 @@ h3 {
     top: 0px;
 }
 
+
+@media screen and (max-width: 500px) {
+    .documentos__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .documentos__card-1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .documentos__card-2 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .documentos__card-3 {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .documentos__card-4 {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+
+    .documentos__card-5 {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+
+    .documentos__card-6 {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+
+    .documentos__card-7 {
+        grid-area: 7 / 1 / 8 / 3;
+    }
+
+    .documentos__card-8 {
+        grid-area: 8 / 1 / 9 / 3;
+    }
+}
+
 @media screen and (max-width: 610px) {
     .contenedor__nav {
         display: flex;
@@ -180,8 +223,8 @@ h3 {
 
     .documentos__grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
 }
