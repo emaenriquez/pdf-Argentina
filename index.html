@@ -4,134 +4,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- tipografia -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <!-- estilos -->
-    <title>PDF-Argentina</title>
+    <title>PdfArgentina</title>
     <link rel="stylesheet" href="styeles.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
 
+    <!-- Div contenedor de toda la pagina -->
     <div class="contenedor">
+
+        <!-- Contenedor header -->
         <header class="contenedor__header">
+
             <nav class="contenedor__nav">
-                <img src="vector/default-monochrome-black.svg" alt="" class="nav__img">
-                <input type="text" placeholder="Buscar Documentos en pdfArgentina" class="nav__input">
-                <a href="#" class="nav__a">iniciar seccion</a>
-                <a href="#" class="nav__a">menu</a>
+
+                <div class="div__img">
+                    <img src="vector/default-monochrome-black.svg" alt="logo" class="contenedor__header-img">
+                </div>
+
+                <form class="nav__form">
+                    <input class="nav__input-buscar" type="text" placeholder="Search" list="buscar">
+
+                    <datalist id="buscar">
+                        <option value="El origen de las especies">
+                        <option value="Programacion">
+                        <option value="Robotica">
+                        <option value="Electronica">
+                        <option value="Nicolas Tela">
+                        <option value="albert einstein">
+                    </datalist>
+
+                    <button class="nav__input-enviar" type="submit">Buscar</button>
+                </form>
             </nav>
+
+
         </header>
-        <div class="seccion__img">
-            <div class="seccion__img-contenido"></div>
-            <img src="./vector/undraw_Notebook_re_id0r.svg" alt="">
-            <h1>
-                Obtenga acceso a decenas de millones de <br>
-                documentos gratuitos.
-            </h1>
-        </div>
 
-        <div class="card__seccion">
+        <!-- Primera section -->
+        <section class="section__top">
+            <article class="contenedor__article">
 
-            <div class="card__seccion-1 elemento__card-1">
-                <div class="card__img">
-                    <img src="./iconos/mas.png" alt="" class="card__img">
+                <div class="article__div-img">
+                    <img src="vector/undraw_Notebook_re_id0r.svg">
                 </div>
-                <h2>Lo mejor para aprender</h2>
-                <p>La única plataforma científica gratuita disponible públicamente en Internet. Aprender nunca ha sido
-                    tan fácil</p>
-            </div>
-    
-            <div class="card__seccion-1 elemento__card-2">
-                <div class="card__img">
-                    <img src="./iconos/caja.png" alt="" class="card__img">
-                </div>
-    
-                <h2>Perfecto para compartir</h2>
-                <p>pdfArgentina es el mejor lugar para compartir conocimientos en Internet. ¡Buscar y compartir documentos
-                    privados nunca ha sido tan fácil!</p>
-            </div>
-    
-            <div class="card__seccion-1 elemento__card-3">
-                <div class="card__img">
-                    <img src="./iconos/shuffle.png" alt="" class="card__img">
-                </div>
-                <h2>Ofertas de la empresa</h2>
-                <p>Documentos de empresas públicas, listas de precios actuales, manuales de usuario: ¡estos son solo una
-                    fracción del contenido disponible en el docer!</p>
-            </div>
-    
-            <div class="card__seccion-1 elemento__card-4">
-                <div class="card__img">
-                    <img src="./iconos/me-gusta (1).png" alt="" class="card__img">
-                </div>
-                <h2>Simple y conveniente</h2>
-                <p>¡Millones de documentos de texto públicos, publicaciones científicas e incluso fragmentos inéditos de
-                    libros en un solo lugar!</p>
-            </div>
-    
-        </div>
 
-        <div class="documentos">
-            <h3>Últimos documentos compartidos públicamente</h3>
-            <div class="documentos__grid">
-                <div class="documentos__card documentos__card-1">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido ">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
+                <div class="article__div-titulo">
+                    <h1>Obtenga acceso a decenas de millones de
+                        documentos gratuitos</h1>
                 </div>
-        
-                <div class="documentos__card documentos__card-2">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido ">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-        
-                <div class="documentos__card documentos__card-3">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-                
-    
-                <div class="documentos__card documentos__card-4">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-    
-                <div class="documentos__card documentos__card-5">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-    
-                <div class="documentos__card documentos__card-6">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-    
-                <div class="documentos__card documentos__card-7">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido ">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-    
-                <div class="documentos__card documentos__card-8">
-                    <img src="./imagenesdelosarchivos/aprenderjs.png" alt="eloquent javasScript" class="documentos__img">
-                    <p class="documentos__contenido ">eloquent javaScript-javaScript<br>Fecha<br>Pagina<br><button class="buttom">Descargar PDF</button>
-                    </p>
-                </div>
-    
-            </div> 
-        </div>
 
-        <footer class="footer">hecho con &#128151 por Emanuel Enriquez</footer>
+            </article>
+        </section>
+
+        <!-- Segunda section grid -->
+        <section class="section__grid">
+
+            <div class="contenedor__responsive">
+
+                <article class="article__grid article__grid-1">
+                    <div class="flex-row">
+                        <div class="article__img">
+                            <img src="https://img.icons8.com/ios/50/000000/code.png">
+                        </div>
+                        <div class="article__contenido">
+                            <h2>La mejor para aprender</h2>
+                            <p>La unica plataforma cientifica gratuita disponible publicamente en internet. Aprender
+                                nunca
+                                ha
+                                sido tan facil</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__grid article__grid-2">
+                    <div class="flex-row">
+                        <div class="article__img">
+                            <img src="https://img.icons8.com/ios/50/000000/box.png">
+                        </div>
+                        <div class="article__contenido">
+                            <h2>Perfecto para compartir</h2>
+                            <p>PDF Argentina es el mejor lugar por compartir conocimientos en internet ¡buscar y
+                                compartir documentos privados nunc ha sido tan facil!!</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__grid article__grid-3">
+                    <div class="flex-row">
+                        <div class="article__img">
+                            <img src="https://img.icons8.com/ios/50/000000/related-companies.png">
+                        </div>
+                        <div class="article__contenido">
+                            <h2>Ofertas de la emrpresa</h2>
+                            <p>Documentos de emrpresas publicas, lista de precio actuales, manuales de usuario: ¡esto
+                                son solo una fracion del contenido disponible en pdf Argentina!</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__grid article__grid-4">
+                    <div class="flex-row">
+                        <div class="article__img">
+                            <img src="https://img.icons8.com/ios/50/000000/hearts.png">
+                        </div>
+                        <div class="article__contenido">
+                            <h2>Simple y conveniente</h2>
+                            <p>¡Millones de comentos de textos publicos, publicaciones cientificas e incluso fragmento
+                                inedito de libros en un solo lugar!</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Tercera section Gird Documnetos-->
+        <section class="section__documentos">
+
+            <h2>Ultimos documentos compartidos publicamente</h2>
+
+            <div class="contenedor__documentos-grid">
+
+                <article class="article__documento article__documento-1">
+
+                    <div class="flex-row">
+                        <div class="article__documento-img">
+                            <img src="./imagenesdelosarchivos/aprenderjs.png">
+                        </div>
+                        <div class="article__documento-contenido">
+                            <h3 class="article__documento-titulo">Aprende JavaScript</h3>
+                            <p class="article__documento-fecha">2020-05-13</p>
+                            <p class="article__documento-peso">14.9kb</p>
+                            <p class="article__documento-paginas">110 Paginas</p>
+                            <button class="article__documento-button">PDF</button>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="article__documento article__documento-2">
+
+                    <div class="flex-row">
+                        <div class="article__documento-img">
+                            <img src="./imagenesdelosarchivos/aprenderjs.png">
+                        </div>
+                        <div class="article__documento-contenido">
+                            <h3 class="article__documento-titulo">Aprende JavaScript</h3>
+                            <p class="article__documento-fecha">2020-05-13</p>
+                            <p class="article__documento-peso">14.9kb</p>
+                            <p class="article__documento-paginas">110 Paginas</p>
+                            <button class="article__documento-button">PDF</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__documento article__documento-3">
+
+                    <div class="flex-row">
+                        <div class="article__documento-img">
+                            <img src="./imagenesdelosarchivos/aprenderjs.png">
+                        </div>
+                        <div class="article__documento-contenido">
+                            <h3 class="article__documento-titulo">Aprende JavaScript</h3>
+                            <p class="article__documento-fecha">2020-05-13</p>
+                            <p class="article__documento-peso">14.9kb</p>
+                            <p class="article__documento-paginas">110 Paginas</p>
+                            <button class="article__documento-button">PDF</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__documento article__documento-4">
+
+                    <div class="flex-row">
+                        <div class="article__documento-img">
+                            <img src="./imagenesdelosarchivos/aprenderjs.png">
+                        </div>
+                        <div class="article__documento-contenido">
+                            <h3 class="article__documento-titulo">Aprende JavaScript</h3>
+                            <p class="article__documento-fecha">2020-05-13</p>
+                            <p class="article__documento-peso">14.9kb</p>
+                            <p class="article__documento-paginas">110 Paginas</p>
+                            <button class="article__documento-button">PDF</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__documento article__documento-5">
+
+                    <div class="flex-row">
+                        <div class="article__documento-img">
+                            <img src="./imagenesdelosarchivos/aprenderjs.png">
+                        </div>
+                        <div class="article__documento-contenido">
+                            <h3 class="article__documento-titulo">Aprende JavaScript</h3>
+                            <p class="article__documento-fecha">2020-05-13</p>
+                            <p class="article__documento-peso">14.9kb</p>
+                            <p class="article__documento-paginas">110 Paginas</p>
+                            <button class="article__documento-button">PDF</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__documento article__documento-6">
+
+                    <div class="flex-row">
+                        <div class="article__documento-img">
+                            <img src="./imagenesdelosarchivos/aprenderjs.png">
+                        </div>
+                        <div class="article__documento-contenido">
+                            <h3 class="article__documento-titulo">Aprende JavaScript</h3>
+                            <p class="article__documento-fecha">2020-05-13</p>
+                            <p class="article__documento-peso">14.9kb</p>
+                            <p class="article__documento-paginas">110 Paginas</p>
+                            <button class="article__documento-button">PDF</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- contenedor footer -->
+        <footer class="footer">
+            <a class="footer__link" href="#">Contacto</a>
+            <a class="footer__link"  href="#">condiciones</a>
+            <a class="footer__link"  href="#">Reportar la violacion</a>
+            <a class="footer__link"  href="#">GDPR</a>
+
+            <p>PdfArgentina.com.ar &#169 2021</p>
+        </footer>
     </div>
-    <!-- <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div> -->
 </body>
 </html>
